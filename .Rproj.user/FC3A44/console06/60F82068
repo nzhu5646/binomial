@@ -1,0 +1,10 @@
+]0;~/binomial[?1034hcalvisitor-10-105-150-18:binomial nicole$ [Kcalvisitor-10-105-150-18:binomial nicole$ ls
+DESCRIPTION	NAMESPACE	binomial.Rproj	man		vignettes
+Meta		R		doc		tests
+]0;~/binomialcalvisitor-10-105-150-18:binomial nicole$ git init
+Initialized empty Git repository in /Users/nicole/binomial/.git/
+]0;~/binomialcalvisitor-10-105-150-18:binomial nicole$ git remote ad[K[K[K[K[Kte add origin https://github.com/nzhu5646/binomial.git
+]0;~/binomialcalvisitor-10-105-150-18:binomial nicole$ git remote -v
+origin	https://github.com/nzhu5646/binomial.git (fetch)
+origin	https://github.com/nzhu5646/binomial.git (push)
+]0;~/binomialcalvisitor-10-105-150-18:binomial nicole$ git add .

@@ -1,0 +1,60 @@
+---
+title: "Getting Started with cointoss"
+author: "Gaston Sanchez"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to cointoss}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+## Binomial
+
+The package `"binomial"` is an implementation for simulating binomial distributions given a number of trials and probability. 
+
+## Binomial Choose
+
+Given a number of trials and number of successes, this will return the number of combinations there are
+```{r}
+bin_choose(5,2)
+```
+
+## Binomial Probability
+
+Given a number of trials, successes and probability of success, this will return the probability of given successes in given number of trials.
+```{r}
+bin_probability(2,5,0.5)
+```
+
+## Binomial Distribution
+
+Given a number of trials and probability, this returns a dataframe with all distributions across successes. The plot of this distribution can also be retrieved.
+```{r}
+x <- bin_distribution(10, 0.5)
+x
+plot(x)
+```
+
+## Binomial Cumulative
+
+This gives the cumulative probability distribution given a certain number of trials and probability. The plot of this distribution can also be retrieved.
+```{r}
+y <- bin_cumulative(10, 0.5)
+y
+plot(y)
+```
+
+## Binomial Variable
+
+This creates a binomial variable that we can then extract stats from.
+```{r}
+var <- bin_variable(10, 0.5)
+var
+summary(var)
+```
